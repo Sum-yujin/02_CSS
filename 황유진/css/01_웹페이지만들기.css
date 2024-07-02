@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+main>div{ border: 3px solid black;} 
+
+li:hover{
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
+}
+
+
+.header-1,.header-3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: lightgrey;
+    
+
+    height: 150px;
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+
+.header-1,.header-3:hover{ text-decoration: underline;}
+
+.header-1{ 
+
+    width: 200px;
+    height: 300pxx;
+    
+    font-size: 200px;
+    text-align: center;
+    text-decoration: overline;
+
+    line-height: 200px; 
+
+}
+
+
+.header-2{ 
+    visibility: hidden;    
+    flex-grow: 1;
+}
+
+
+.header-3{ 
+    background-color: white;
+    width: 100px;
+    height: 40%;
+    margin-right: 5px;
+    border: 1px solid #2F3645;
+    border-radius: 30px;
+
+
+    text-align: center;
+
+    line-height: 65px; 
+
+}
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/* main-1 내부 ul */
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    font-size: 25px;
+}
+
+li:active{ 
+    text-decoration: underline;
+}
+
+
+/* sticky */
+.main-1{
+    background-color: white;
+    height: 70px;
+    
+    align-content: flex-end;
+
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+
+/* ad */
+.main-2{
+    height: 500px;
+    background-color: aquamarine;
+
+    display: flex;
+    
+}
+
+.main-2 > div{
+    height: 50%;
+    width: 25%;
+    margin: 10px;
+}
+
+
+.ad2,.ad4{ align-self: flex-end;}
+
+
+
+
+/* 추천내용 */
+.main-3{
+    margin:px;
+    height: 900px;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#hd {
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 600px;
+}
+
+.left{
+    width: 100%;
+    height: 80%;
+}
+
+
+
+
+/* 표 */
+.right{
+    width: 40%;
+    margin: 5px;
+    
+    display: flex;
+    align-self: center;
+}
+
+.th{width: 100%;}
+
+
+#tb{ 
+    display:block;
+    height: 100%;
+}
+
+th,tr,td{ 
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#td1{width: 20%;}
+#td2{width: 30%;}
+#td3{width: 50%;}
+#td3 > img{ 
+    display: inline;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.main-4{
+    border: none;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main-4 > div{ 
+    
+    width: 20%;
+    height: 100%;
+}
+
+
+.a4{background-color: #EEF5FF;}
+.a3{background-color: #B4D4FF;}
+.a2{background-color: #86B6F6;}
+.a1{background-color: #176B87;}
+
+
+
+
+
+
+
+/* 마지막 줄 */
+
+footer{
+    background-color: lightgrey;
+
+    height: 130px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer >section{
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section > div,a{
+    margin-left: 10px;
+
+
+    text-decoration: none;
+}
+
+a>d{
+    font-size: 40px; 
+}
+
+
+html{ scroll-behavior: smooth; }
+
+@font-face {
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_eunbyul21-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  *{    font-family: 'Ownglyph_eunbyul21-Rg'; }
+    
+  *:not(header){font-size: 25px;}
+  

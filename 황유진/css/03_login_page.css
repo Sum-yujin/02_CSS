@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+#main{ border: 3px solid black;} 
+
+
+header,main{ margin-bottom: 10px;}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    padding-top: 200px;
+    text-align: center;
+}
+
+h1 > a{
+    color: #03AED2;
+    text-decoration: none;    
+}
+
+#space{
+    height: 15px;
+    visibility: hidden; 
+}
+
+/* 로그인 상자 */
+
+main{
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-grow: 1;
+    
+}
+
+#main{
+    background-color: #CAF4FF;
+    width: 50%;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main > section{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+main > div{
+    height: 550px;
+
+    font-size: 50px;
+    font-style: solid;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+br{ display: none;}
+
+
+.text-box{ 
+    width: 70%;
+}
+
+.text{ 
+    padding: 10PX;
+
+    display:flex;
+    flex-direction: row;
+    justify-items: baseline;
+    align-items: baseline;
+    align-content: center;
+}
+
+
+strong{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.text-2{ padding-left: 1.5%; }
+
+.input{ 
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+#keep,label{ 
+    width: 20px;
+    height: 20px;
+    margin-bottom: 50px; 
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+#button{ 
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+/* 푸터 */
+footer{
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer >section{
+    padding: 15px 0px 0px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section > div,a{
+    margin-left: 10px;
+    color: #03AED2;
+
+    text-decoration: none;
+}
+
+#logs{
+    font-size: 25px;
+    color: #03b0d293;
+}
+
+.blank{
+    visibility : hidden;
+    height: 150px;
+}
+
+@font-face {
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_eunbyul21-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  *{    font-family: 'Ownglyph_eunbyul21-Rg'; }
+    
+  *:not(header){font-size: 25px;}

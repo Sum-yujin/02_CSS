@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div, header, main, footer, section{ border: 1px solid black;}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  align-content: stretch;
+}
+
+/* ↑ 웹페이지 만들때 기본속성 값으로 알아두기 */
+
+header{
+  height: 80px;
+  display: flex;
+}
+
+.header-1{ 
+  width: 100px;
+  text-align: left;
+  
+  display: flex;
+  flex-direction: column;
+  align-self: center flex-end;
+  justify-content: center;
+
+  margin-left: 50px;
+
+  
+  font-size: larger;
+  font-style: '고딕';
+}
+
+.header-2{ 
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+
+.menu{
+  margin:0px 2.5px ;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100vh;
+
+  height: 50px;
+}
+
+.menu > div{
+  width: 25%;
+  height: 50px;
+  line-height: 25%;
+
+  
+  text-align: center;
+}
+
+.img{
+  
+  height: 30px;
+
+  max-height: none;
+  margin-top: 0;
+}
+
+.content{
+  height: 600px;
+  margin: 0px 4px 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content > div{
+  height: 45%;
+  border-radius: 5px;
+
+}
+
+.table-2{
+  height: 500px;
+  border-radius: 5px;
+  margin: 0px 4px 20px 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  min-width: none;
+
+}
+
+img{
+  display: block;
+  width: 80%;
+  height: 70%;
+}
+
+.table-2 > div {
+  width: 25%;
+}
+
+
+footer {
+  height: 180px;
+}
